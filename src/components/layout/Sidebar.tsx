@@ -37,7 +37,7 @@ const menuItems = [
 export function Sidebar({ currentPage, onPageChange, isOpen }: SidebarProps) {
   return (
     <aside 
-      className={`fixed left-0 top-[73px] h-[calc(100vh-73px)] bg-white border-r border-gray-200 overflow-y-auto transition-all duration-300 ease-in-out z-40 shadow-lg lg:shadow-none
+      className={`fixed left-0 top-[73px] h-[calc(100vh-73px)] bg-white border-r border-gray-200 overflow-y-auto overflow-x-hidden transition-all duration-300 ease-in-out z-40 shadow-lg lg:shadow-none
       ${isOpen ? 'w-64 translate-x-0' : 'w-20 -translate-x-full lg:translate-x-0'}
       lg:${isOpen ? 'w-64' : 'w-20'}`}
     >
